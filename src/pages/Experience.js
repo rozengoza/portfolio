@@ -19,7 +19,7 @@ function Experience() {
         date ="August, 2023 - Present"
         iconStyle= {{background: "navy",color:"#fff"}}
         icon={<WorkIcon/>}
-        ><h3 className="vertical-timeline-element-title">Full Stack Developer Internship</h3>
+        ><h3 className="vertical-timeline-element-title">Full Stack Development Internship</h3>
         <h5>Skills:- <span>React.Js</span> <span>.NET</span></h5>
         <p>Teksewa</p></VerticalTimelineElement>
 
