@@ -2,6 +2,8 @@ import React from 'react'
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import EmailIcon from "@material-ui/icons/Email"
+
+
 import {Link} from 'react-router-dom'
 import '../styles/Home.css'
 
@@ -12,9 +14,9 @@ function Home() {
             <h2>Hello, This is Rozen Shrestha.</h2>
             <div class="prompt">
                 <p>A software developer with passion for full stack web development.</p>
-               <LinkedInIcon/>
-                <GitHubIcon/>
-                <EmailIcon/>
+                <LinkedInIcon onClick={() => { window.location.href = 'https://np.linkedin.com/in/rozen-shrestha-7bbab923b'; } }  />
+                <GitHubIcon onClick={() => { window.location.href = 'https://github.com/rozengoza'; } } />
+                <EmailIcon onClick={() => { window.location.href = 'mailto:rozengoza22@gmail.com'; } } />
             </div>
         </div>
         <div className= "skills">
