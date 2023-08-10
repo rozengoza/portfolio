@@ -1,8 +1,10 @@
 ## Hello, Welcome to my Portfolio Website
 - I'm Rozen Shrestha and I'm interested in working with full stack web development applications and I'm also interested in data science. 
 - - I've briefly displayed what you need to know of my professional career.
+- - I look forward to working together.
 
 ## TechStack Used for this Project
+
 [x] React.JS
 [x] Material UI/ AntDesign
 [x] React Hooks
