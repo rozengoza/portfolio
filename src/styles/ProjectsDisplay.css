@@ -1,44 +1,67 @@
 .project {
     margin-top:80px;
     width: 100%;
-    position: relative;
-    height: calc(100vh - 100px);
+    position: static;
+    height: fit-content;
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     flex-direction: column;
   }
-  
-  .project h1 {
 
-    margin-top: 200px;
-    position:sticky;
+  .project-basic{
+    margin-top:0px;
+    position:static;
+    height:fit-content;
+    display:flexbox;
+    justify-items: center;
+    align-items: center;
+    position:static;
+
+  }
+
+  
+  .project-basic h1 {
+    
+    margin-top: 5px;
+    position:static;
     color: #3e497a;
     font-size: 25px;
   }
-  .project img {
-    width: 700px;
+  .project-basic img {
+
+    margin-top:20px;
+    width: 100%;
     height:400px;
-    margin-top:10px;
-    position:sticky;
+    position:static;
     border-radius: 10px;
   }
   
-  .project p {
+  .project-basic p {
+    display:block;
+    margin-top:10px;
     font-size: 18px;
     color: #3e497a;
+    position: static;
+    
   }
   
-  .project svg {
-    font-size: 60px;
+  .project-basic svg {
+    margin-top:10px;
+    font-size: 25x;
+    padding-left:5%;
     color: #3e497a;
+    position:static;
+    
   }
 
-  .aboutProject{
-    margin-top:10px;
-    display:flex;
-    justify-content: center;
-  }
+.show-Description{
+  height:100px;
+  display:contents;
+  justify-content:center;
+  align-items: center;
+  position:static;
+}
 
   .about-this-Button{
     margin-top:10px;
@@ -46,7 +69,7 @@
     background-color: navy;
     border-radius:5px;
     border-color:aqua;
-    position:sticky;
+    position:static;
   }
 
   .about-this-Button:hover{
@@ -54,11 +77,10 @@
     background-color:green;
     border-radius:5px;
     border-color:green;
-    position:sticky;
   }
   .show{
     margin-top:10px;
-    margin-bottom:10px;
+    position:static;
     font-family: 'Times New Roman', Times, serif;
     font-size:15px;
     padding: 0 50px ;
@@ -68,9 +90,17 @@
     background-color: aliceblue;
     font-weight: lighter;
   }
-  /* .view-blockDiagram-Button{
-    margin-top:10px;
-    margin-bottom:20px;
+
+  .blockDiagram{
+    position:static;
+    margin-top:20px;
+    display:contents;
+    flex-direction: vertical;
+    justify-content: center;
+    align-items: center;
+  }
+  .view-blockDiagram-Button{ 
+    margin-top:20px;
     color :azure;
     background-color: navy;
     border-radius:5px;
@@ -86,23 +116,16 @@
     position:sticky;
   }
 
-  .blockDiagram{
-    margin-top:10px;
-    margin-bottom:20px;
+  
+  .show-blockDiagram{
+    display:contents;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .show-blockDiagram h5{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    color:navy;
   }
-.blockDiagram h5{
-  font-family:'Times New Roman', Times, serif;
-  font-size:20px;
-  color:navy;
-}
-.show-blockDiagram{
-  display:flex;
-  justify-content: center;
-  align-content: center;
-  margin-left:10px;
-  margin-right:10px;
-  margin-top:20px;
-  margin-bottom:20px;
-} */
-
   

@@ -8,7 +8,7 @@ function ProjectsDisplay() {
     const project =ProjectList[id];
     // const [input,setInput] = useState("");
     const [aboutProjectVisibility, setAboutProjectVisibility] =useState(false)
-    // const [blockDiagramVisibility, setBlockDiagramVisibility] =useState(false)
+    const [blockDiagramVisibility, setBlockDiagramVisibility] =useState(false)
     const handleAboutOnClick = () => {
       if(aboutProjectVisibility === false){
         setAboutProjectVisibility(true);
@@ -18,40 +18,45 @@ function ProjectsDisplay() {
       }
     }
 
-    // const handleBDOnClick=() =>{
-    //   if(blockDiagramVisibility === false){
-    //     setBlockDiagramVisibility(true);
-    //   }
-    //   else{
-    //     setBlockDiagramVisibility(false);
-    //   }
-    // }
+    const handleBDOnClick=() =>{
+      if(blockDiagramVisibility === false){
+        setBlockDiagramVisibility(true);
+      }
+      else{
+        setBlockDiagramVisibility(false);
+      }
+    }
   return (
     <div className="project">
+      <div className="project-basic">
         <h1>{project.name}</h1>
         <img src ={project.image} alt="none"/>
         <p>
             <b>TechStack :-</b> {project.techStack}
         </p>
         <GitHubIcon onClick={() => { window.location.href = project.githubLink } }/> 
-
-          <button onClick={handleAboutOnClick} type="button" className="about-this-Button">About This Project</button>
+      </div>
+        
+      <div className="show-Description">
+      <button onClick={handleAboutOnClick} type="button" className="about-this-Button">About This Project</button>
           {aboutProjectVisibility &&
           <div className="show">
             <p>{project.aboutProject}</p>
             </div>
             }
+      </div>
+          
           
 
-        {/* <button onClick={handleBDOnClick} type="button" className="view-blockDiagram-Button">View Block Diagram</button>
         <div className="blockDiagram">
+        <button onClick={handleBDOnClick} type="button" className="view-blockDiagram-Button">View Block Diagram</button>
         {blockDiagramVisibility &&
           <div className="show-blockDiagram">
             <h5>Block Diagram of <span>{project.name}</span></h5>
             <img src ={project.blockDiagramImage} alt="none"/>
             </div>
             }
-        </div> */}
+        </div>
           
 
         </div>

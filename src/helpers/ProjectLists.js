@@ -4,7 +4,7 @@ import BloodDonor from '../assests/bloodDonor.png'
 import SajiloSwasthyaSewa from '../assests/sajiloSwasthya.png'
 import FloralNepal from '../assests/floralNepal.png'
 // import FaceRecogBlockD from 
-// import SwasthyaSewaBlockD from '../assests/swasthyaSewaBD.png'
+import SwasthyaSewaBlockD from '../assests/swasthyaSewaBD.png'
 
 export const ProjectList =[
     {
@@ -29,7 +29,7 @@ export const ProjectList =[
         techStack:"Java,Firebase,XML",
         githubLink : "",
         aboutProject:"Here, we have tried to simplify search for blood during the time of need. Basically, this is a mobile application that allows us to register as a blood donor upon passing eligibility test and on default, register as a blood requester. In the profile section, a register donor can toggle a button to mark themselves as available or unavailable. When a blood requester seeks for blood donors, a list of possible donors of certain blood group and currently within a radius of 10Km range is displayed. Here, live location of the users connected to Internet is accessed through user permissions and Haversine Formula is used to calcutate the distance between the probable donors and the requester. Requests and response are sent between seeker and donors through app notification. ",
-        blockDiagramImage:"",
+        blockDiagramImage:SwasthyaSewaBlockD,
     },
     {
         name: "Sajilo Swasthya Sewa - An Online Patient Registration Web Application",
@@ -37,7 +37,7 @@ export const ProjectList =[
         techStack:"Next.Js,Node.Js,MongoDB",
         githubLink : "https://github.com/rozengoza/Online-Patient-Registration-System-",
         aboutProject : "This Web Application is an approach to simplify tiresome and lengthy procedure of registering an appointment in most of the public, governmental and community run hospitals in the country. This application allows two user logins, one as Hopital Representative Admins who verifies and responds to patient registration requests, and another as a patient, who can book an appointment for themselves stating their problems and in the respective department. The problem statement of this Project as I visuaulized myself was here in Nepal, in most of the non-privatized hospitals, where footfalls is relatively a higher number, there is relatively a larger waiting time for service. This project seeks to deduct the waiting time as Patients will be able to visit the hospital only when their appointments have been scheduled to. This application also allows to better manage the medical history of registered patients.",
-        blockDiagramImage:"",
+        blockDiagramImage:SwasthyaSewaBlockD,
     },
     {
         name: "Floral Nepal - An Ecommerce Website to Buy Plants",
